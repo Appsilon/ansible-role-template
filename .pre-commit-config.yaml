@@ -44,3 +44,11 @@ repos:
         entry: yamllint
         language: python
         types: [file, yaml]
+
+  - repo: https://github.com/robertdebock/pre-commit
+    rev: v1.4.5
+    hooks:
+      - id: ansible_role_find_unused_variable
+      - id: ansible_role_find_empty_directories
+      - id: ansible_role_fix_readability
+      - id: ansible_role_find_undefined_handlers
