@@ -31,8 +31,6 @@ repos:
       - id: shell-lint
 
   - repo: https://github.com/ansible-community/ansible-lint
-    # This is intentionally being held back because of issues in v5 per
-    # https://github.com/cisagov/skeleton-ansible-role/issues/69
     rev: v5.4.0
     hooks:
       - id: ansible-lint

@@ -2,10 +2,10 @@
 ---
 galaxy_info:
   namespace: appsilon
-  role_name: template
+  role_name: fill_this_in
   author: Appsilon
   company: Appsilon
-  description: Fill this in
+  description: fill_this_in
   license: MIT
   min_ansible_version: 2.11.1
   platforms:
