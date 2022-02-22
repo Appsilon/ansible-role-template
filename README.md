@@ -60,6 +60,12 @@ molecule converge
 molecule verify
 ```
 
+To log into the running instance for troubleshooting purposes:
+
+```bash
+molecule login
+```
+
 At the end of the test, destroy the environment:
 
 ```bash
