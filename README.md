@@ -1,6 +1,6 @@
 # Ansible Role Template
 
-![Pipeline Status](https://github.com/mentoriaiac/template-role-ansible/actions/workflows/ci.yml/badge.svg)
+[![Pipeline Status](https://github.com/Appsilon/ansible-role-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Appsilon/ansible-role-template/actions/workflows/ci.yml)
 
 This repository provides a base scaffolding template to use as a quick start of
 all Ansible roles at @Appsilon. Includes best practices that should always be
