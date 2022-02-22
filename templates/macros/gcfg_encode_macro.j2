@@ -1,0 +1,24 @@
+{#
+ # Jinja2 macro which converts Ansible map into GCFG format
+ #}
+
+{%- macro gcfg_encode(
+      item,
+      delimiter=" = ",
+      quote="" ) %}
+
+  {%- for section, options in item.items() | sort %}
+    {%- if options is mapping -%}
+        {{ "\n[" ~ section ~ "]\n" }}
+      {%- for property, value in options.items() | sort -%}
+        {%- if value is string or value is number -%}
+          {{ property ~ delimiter ~ quote ~ value ~ quote ~ "\n" }}
+        {%- else %}
+          {%- for v in value -%}
+            {{ property ~ delimiter ~ quote ~ v ~ quote ~ "\n" }}
+          {%- endfor %}
+        {%- endif %}
+      {%- endfor %}
+    {%- endif %}
+  {%- endfor %}
+{%- endmacro %}
