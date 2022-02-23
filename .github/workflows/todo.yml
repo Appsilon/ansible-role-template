@@ -1,0 +1,21 @@
+---
+name: TODO to GitHub Issue
+'on':
+  push:
+    branches:
+      - main
+
+jobs:
+
+  todo:
+    name: TODO to GitHub Issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the codebase
+        uses: actions/checkout@v2
+
+      - name: Raise GitHub issues for TODOs found
+        uses: alstr/todo-to-issue-action@v4.6.2
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTO_ASSIGN: true
