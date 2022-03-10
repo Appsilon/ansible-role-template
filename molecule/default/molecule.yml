@@ -11,6 +11,7 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     privileged: true
     pre_build_image: true
+    platform: linux/amd64
 provisioner:
   name: ansible
   playbooks:
