@@ -1,9 +1,8 @@
 # meta file
 ---
 galaxy_info:
-  namespace: appsilon
   role_name: fill_this_in
-  author: Appsilon
+  author: appsilon
   company: Appsilon
   description: fill_this_in
   license: MIT
