@@ -9,3 +9,5 @@ offline: false
 use_default_rules: true
 parseable: true
 verbosity: 1
+skip_list:
+  - name[casing]  # Rule for checking task and play names.
