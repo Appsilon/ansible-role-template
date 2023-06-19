@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Raise GitHub issues for TODOs found
-        uses: alstr/todo-to-issue-action@v4.9.1
+        uses: alstr/todo-to-issue-action@v4.9.3
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AUTO_ASSIGN: true
