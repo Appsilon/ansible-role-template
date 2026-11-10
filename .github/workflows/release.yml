@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase
-        uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
+        uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26  # v3
 
       - name: Publish to Galaxy
-        uses: robertdebock/galaxy-action@7d89099e09f4385ec4b53eb58c0d120f1ad806dd # 1.2.1
+        uses: robertdebock/galaxy-action@7d89099e09f4385ec4b53eb58c0d120f1ad806dd  # 1.2.1
         with:
           galaxy_api_key: ${{ secrets.ANSIBLE_GALAXY_TOKEN }}
           git_branch: main
